@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Team</title>
+<link href="css/style.css" rel="stylesheet">
+<link rel="icon" type="image/ico" href="Leviticus/LP.png" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+			height: 100%;
+      }
+
+h6    {
+        font-family:Source Sans Pro;
+        color: gray;
+        font-size:40px;
+        text-align: center;
+        position: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap   {
+  
+  width: 100%;
+  padding: auto;
+  margin: auto;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media screen and (max-width: 800px){
+    .wrap {
+        width: 100%;
+    }
+}
+
+.row > .container {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position:sticky;
+  width: 80%;
+	padding: auto;
+	margin: auto;
+}
+
+.image {
+  opacity: ;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image:hover {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width:60%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middles {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width:60%;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .middles {
+  opacity: 1;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: gray; 
+  font-size: 25px;
+  
+}
+
+.team-title h4 {
+	text-align:center;
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #606060;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 800px){
+  /* For Mobile Phones*/
+  .container, .middle, .middles{
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+    <!--creating a navigation container-->
+    <div id="navbar">
+        <a href="blog.html">Blog</a>
+        	<a href="contacts.html">Contacts</a>
+        	<a class="active" href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+        	<a href="gallery.html">Gallery</a>
+        	<a href="about us.html">About Us</a>
+        	<a href="index.html">Home</a>
+    <div class="imgBanner">
+      <img href="index.html" src="Leviticus/LP banner.png" width="100%">
+    </div>
+    </div>
+    <br>
+      
+       <div class="wrap">
+        
+        <br><br>
+          <div class="container">
+                <img src="images/IMG-20171109-WA0003.jpg" alt="Sibusiso" class="image" style="width:30%; margin-left:5%; margin-top: 2.5%; border-radius:200px 200px 100% 100%;">
+
+              <div class="middle">
+                 <div class="team-title">
+					<h1>Sibusiso Mashinini</h1>
+					<span>founder <br>&amp; <br>Photographer</span>
+				</div><br>
+                  <hr>
+                  
+                <div class="text"><h4>Hi There !</h4>
+                 <p>I’m Sibusiso Mashinini, I'm from Soweto, South Africa. I am one of the photographers at <i>Leviticus Photography</i>. I have a passion for music, food and reading. I love spending time with my mom and she always makes me smile. </p>
+                </div>
+              </div>
+              </div><br><br>
+			  <h3><i>“I don’t trust words. I trust pictures.”
+			  <br>— Gilles Peress
+				</i></h3>
+              <div class="iconbar">
+                <div class="sicons">
+                     <a href="https://www.facebook.com/twentyfirst.centurionsvibe/"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
+                <a href="https://www.instagram.com/sbudar_24/"> <img src="logo/social-instagram-new-circle-512.png" width="3%"></a>
+                <a href="https://za.pinterest.com/"> <img src="logo/pinterest-512.png" width="3%"></a>
+                <a href="https://twitter.com/login"> <img src="logo/twitter_circle-512.png" width="3%"></a>
+                </div>
+              </div><br><br>
+                <div id="hr1">
+                </div><br>
+          
+         
+            <br>
+          <div class="container">
+                <img src="images/IMG-20180216-WA0002.jpg" alt="Olivia" class="image" style="width:30%; margin-left:65%;border-radius:100% 100% 200px 200px;">
+
+              <div class="middles">
+                <div class="team-title">
+                 <h1>Olivia Baker</h1>
+                 <span>Designer<br> &amp; <br>Art Director</span>
+                </div><br>
+                  <hr>
+				  
+                <div class="text"><h4>Hello World</h4>
+                 <p>I'm Olivia Baker, I’m from Southampton, England. I love travelling, painting and sketching.  I also adore cooking and baking for my family and coming up with new exciting recipes for them to try, it always makes me smile when I see them enjoying something I’ve made. I’d like to continue travelling the world.</p>
+                </div>
+              </div>
+           </div><br><br>
+		   <h3><i>“Photograph: a picture painted by the sun without instruction in art.”
+		   <br>
+		   — Ambrose Bierce</i></h3>
+
+              <div class="iconbar">
+                <div class="sicons">
+                     <a href="https://www.facebook.com/0livia.baker"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
+                <a href="https://https://www.instagram.com/0livia.baker/"> <img src="logo/social-instagram-new-circle-512.png" width="3%"></a>
+                <a href="https://twitter.com/login"> <img src="logo/twitter_circle-512.png" width="3%"></a>
+                </div>
+              </div><br><br>
+                <div id="hr1">
+                </div><br>
+
+          <br>
+          <div class="container">
+                <img src="images/Z I N H L E.jpg" alt="Zinhle" class="image" style="width:30%; margin-left:5%; border-radius:100px 100% 100% 100%;">
+
+              <div class="middle">
+                  <div class="team-title">
+                    <h1>Zinhle Mtebe</h1>
+                    <span>Photographer <br>&amp;  <br>Designer</span>
+                  </div><br>
+                  <hr>
+                  
+                <div class="text"><h4>Hey Everyone</h4>
+                 <p>I’m Zinhle Mtebe, I'm from Soweto, South Africa. I love to introduce myself as a hardcore Designer. I also love reading, sketching, listening to music, taking pictures and spending time with my family and friends.</p>
+                </div>
+              </div>
+          </div><br><br>
+		  <h3><i>“The camera is an instrument that teaches people how to see without a camera.”
+		   <br>
+		   — Dorothea Lange</i></h3>
+              <div class="iconbar">
+                <div class="sicons">
+                    <a href="https://www.facebook.com/zinhlezamangwe.mtebe"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
+                <a href="https://www.instagram.com/mtebezinhle/"> <img src="logo/social-instagram-new-circle-512.png" width="3%"></a>
+                <a href="https://twitter.com/login"> <img src="logo/twitter_circle-512.png" width="3%"></a>
+                </div>
+              </div><br><br>
+                <div id="hr1">
+                </div><br>
+
+            <br>
+
+            <div class="container">
+                <img src="images/megan peters.jpg" alt="Megan" class="image" style="width:30%; margin-left:65%; border-radius:100% 100% 100% 100px;">
+
+              <div class="middles">
+                  <div class="team-title">
+                    <h1>Megan Peters</h1>
+                    <span>Photographer</span>
+                  </div><br>
+                  <hr>
+                  
+                <div class="text"><h4>Hello !</h4>
+                 <p>I'm Megan Peters, I’m from Buckinghamshire, England. I love travelling, swimming, running, dancing and meeting new people. I also love spending time with my friends and family, they always make me smile.</p>
+                </div>
+              </div>
+            </div><br><br>
+			<h3><i>“If you see something that moves you, and then snap it, you keep a moment.”
+			<br>
+			— Linda McCartney</i></h3>
+              <div class="iconbar">
+                <div class="sicons">
+                    <a href="https://www.facebook.com/megan.peters.589"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
+                <a href="https://www.instagram.com/meganpeters21/"> <img src="logo/social-instagram-new-circle-512.png" width="3%"></a>
+                <a href="https://twitter.com/login"> <img src="logo/twitter_circle-512.png" width="3%"></a>
+                </div>
+              </div><br><br>
+               
+      </div>
+<div class="clear">
+      <div class="up">
+        <a href="meet the team.html"><img src="logo/up--.png" width="13%"></a>
+  </div>
+</div>
+
+<div class="clear"></div>
+<div class="col-0">
+<div class="iconbar">
+<div class="sicons">
+      <a href="https://www.facebook.com/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
+      <a href="https://www.instagram.com/"> <img src="logo/images.png" width="3%"></a>
+      <a href="https://twitter.com/login"> <img src="logo/social-twitter-in-acircle-logo_318-28676.jpg" width="3%"></a>
+      <a href="https://plus.google.com/discover"> <img src="logo/social-googleplus-circle_318-29383.jpg" width="3%"></a>
+      <a href="https://www.snapchat.com/"> <img src="logo/icone-snapchat.png" width="3.4%"></a>
+      <a href="https://za.pinterest.com/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
+  </div>
+  </div>
+
+<br>
+<div class="clear"></div>
+<footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

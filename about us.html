@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="Leviticus/LP.png" />
+  <script src="js/script.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+			height: 100%;
+      }
+
+p 	{
+	font-size:26px;
+	color:#606060;
+}
+
+.aboutimg {
+    background-image: url("cam/cam505.jpg");
+    min-height: 670px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+ 	
+
+</style>
+</head>
+
+<body>
+
+		<!--creating a navigation container-->
+		<div id="navbar">
+        <a href="blog.html">Blog</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="about us.html">About Us</a>
+        <a href="index.html">Home</a>
+    <div class="imgBanner">
+      <img href="index.html" src="Leviticus/LP banner.png" width="100%">
+    </div>
+    </div>
+		<br>
+			<div class="clear"></div>
+
+		<div class="wrapper">
+			<div class="aboutimg">
+			<div class="col-1">
+			<p></p>
+			<p></p>
+			<center><p>Young people who like to have fun, travel and taking pictures after the stresses of school and life are taken care of.<br> There’s no better way to unwind and let loose with good music and good friends, than with the youngsters of Leviticus, <br>a photography brand founded on the 2<sup>nd</sup> of April 2014 by Sibusiso Mashinini, a young man from Soweto, South Africa.<br></p>
+			<p><strong><i><b>Leviticus</b></i></strong> is a Late Latin word (the thrid book of the Old Testament, containing the laws relating to priests and Levites).<br>This group of artistic young minds started taking random pictures using their smartphones.<br> The whole idea was to capture the beauty of both mother nature & man-made moments and then share them with their friends and families.<br> Ever since they took their first pictures, Leviticus has been consistently aiming to produce quality photos that tell a story.<br> This concept is applied to each and ever picture that Leviticus produces. <br>If you would like to work together, please contact us..<div class="ContactUs"><a href="contacts.html">Contuct Us</a></div>
+			<h2 style="font-family:roboto; color:grey;"><i><b>“The whole point of taking pictures is so that you don’t have to explain things with words.”<br>— Elliott Erwitt</b></i></h2></p></center>
+			<br>
+			</div>
+			</div>
+		</div>
+
+	<div class="clear"></div>
+
+<br><br><br>
+
+<div class="col-0">
+<div class="iconbar">
+<div class="sicons">
+      <a href="https://www.facebook.com/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
+      <a href="https://www.instagram.com/"> <img src="logo/images.png" width="3%"></a>
+      <a href="https://twitter.com/login"> <img src="logo/social-twitter-in-acircle-logo_318-28676.jpg" width="3%"></a>
+      <a href="https://plus.google.com/discover"> <img src="logo/social-googleplus-circle_318-29383.jpg" width="3%"></a>
+      <a href="https://www.snapchat.com/"> <img src="logo/icone-snapchat.png" width="3.4%"></a>
+      <a href="https://za.pinterest.com/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
+  </div>
+  </div>
+<br>
+<div class="clear"></div>
+<footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function myFunctions() {
+	alert("Click or Hover Over The Image To View The Info!");
+}
+</script>
+
+</body>
+</html>
