@@ -9,12 +9,34 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
+.scrolling-box {
+  display: block;
+  height: 900px;/* 710px */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
+
 </style>
-<div id="navbar">
-    <div class="imgBanner">
-      <img href="Index.html" src="Leviticus/LP banner.png" width="100%">
+ <div class="navbar">
+  <div class="navbar-header">
+    <div class="navbar-title">
+      Leviticus Photography
     </div>
-    </div>
+  </div>
+  <div class="navbar-btn">
+    <label for="navbar-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="navbar-check">
+</div>
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
@@ -130,18 +152,25 @@ and is wrapped around the whole page content, except for the footer in this exam
   <a href="blog.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Previous</button></a>
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next</button>
 </div>
-<div class="col-0">
+  <section id="Bottom">
+  <div class="col-0">
 <div class="iconbar">
 <div class="sicons">
+      <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="6%"></a>
+      <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="6%"></a>
+      <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="6%"></a>
+  </div>
+  </div>
+</div>
       <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
       <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="3%"></a>
       <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
   </div>
   </div>
-
 <br>
 <div class="clear"></div>
 <footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+  </section>
 
 <script>
 window.onscroll = function() {myFunction()};

@@ -14,12 +14,111 @@
 }
 
 body, html {
-			height: 100%;}
+			height: 100%;
+		}
 
+.navbar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  box-shadow: 1px 5px 5px grey;
+  z-index:999;
+}
+
+.navbar > .navbar-header {
+  display: inline;
+}
+
+.navbar > .navbar-header > .navbar-title {
+  display: inline-block;
+  font-size: 22px;
+  color: gray;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbar > .navbar-btn {
+  display: none;
+}
+
+.navbar > .navbar-links {
+  display: inline;
+  float: right;
+  font-size: 17px;
+}
+
+.navbar > .navbar-links > a {
+  display: inline-block;
+  padding: 14px 13px;
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar > .navbar-links > a:hover {
+  transition: all 0.4s ease-in-out;
+  background-color:#606060;
+  color: white;
+}
+
+.navbar > #navbar-check {
+  display: none;
+}
+
+.navbar a.active {
+  background-color: #6D9C91;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width:800px) {
+  .navbar > .navbar-btn {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar > .navbar-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar > .navbar-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar > .navbar-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navbar > .navbar-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar > .navbar-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > #navbar-check:not(:checked) + .navbar-links {
+    height: 0px;
+  }
+  .navbar > #navbar-check:checked + .navbar-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
 
 
 .parallax {
-			background-image:url('cam/cam101.jpg');
+			background-image:url('cam/cam3004.jpg');
 			height: 100%; 
 			background-attachment: fixed;
 			background-position: center;
@@ -50,9 +149,9 @@ body, html {
     }
 }
 
-.col-3 		{
+.col-03 		{
 			width: 90%;
-			margin-top: 3%;
+			margin-top: 7%;
 			float: left;
     		position: relative;
     		min-height: 1px;
@@ -70,7 +169,7 @@ body, html {
     font-size: 16px;
     padding: 20px 40px;
     margin-top: 60px;
-    margin-left: 50.5%;
+    margin-left: 48%;
     margin-bottom: 0;
     display: inline-block;
     font-weight: 400;
@@ -81,6 +180,7 @@ body, html {
     touch-action:manipulation;
     cursor: pointer;
     text-decoration: none;
+    opacity: 0.8;
 }
 
 .startup-button:hover {
@@ -91,25 +191,27 @@ body, html {
 }
 
 .h003 	{
-		color:#f2e6d9 ;
+		color:#fff ;
 	    margin: .67em 0;
     	margin-top: 20px;
     	margin-bottom: 10px;
-    	margin-left: 15%;
+    	margin-left: 10%;
     	visibility: visible;
     	font-size: 32px;
     	font-family:sans-serif;
     	animation-name:bounceInDown;
+    	opacity: 0.7;
 }
 
 .h002 	{
-		color:#f2e6d9 ;
+		color:#fff ;
 		font-size: 42px;
 		font-family: "Arial";
     	font-weight: bold;
     	margin-top: 20px;
     	margin-bottom: 10px;
-    	margin-left: 15%;
+    	margin-left: 10%;
+    	opacity: 0.7;
 }
 
 #myImg:hover{
@@ -117,12 +219,48 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
+.scrolling-box {
+  display: block;
+  height: 900px;/* 710px */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
+
 </style>
 </head>
 
 <body>
+ <div class="scrolling-box">
+			<div class="navbar">
+  <div class="navbar-header">
+    <div class="navbar-title">
+      Leviticus Photography
+    </div>
+  </div>
+  <div class="navbar-btn">
+    <label for="navbar-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="navbar-check">
+  <div class="navbar-links">
+    <a class="active" href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a href="gallery.html">Gallary</a>
+    <a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="blog.html">Blog</a>
+  </div>
+</div>
 		<div class="parallax">
-			<div class="col-3">
+			<div class="col-03">
 				<div class="h003">
 				<h2 class="wow bounceInDown rotate animated" style="visibility: visible; animation-name: bounceInDown;">WELCOME</h2><h2>TO</h2></div>
 				<div class="h002">
@@ -130,25 +268,13 @@ body, html {
 				<div class="h003">
 				<h2 class="wow bounceInDown rotate animated" style="visibility: visible; animation-name: bounceInDown;">PHOTOGRAPHY</h2></div>
 				 
-				<a href="#imgBanner" class="startup-button smoothScroll">GET STARTED</a>
+				<a href="#imgBanner" class="startup-button smoothScroll">SCROLL DOWN</a>
 			</div>
 		</div>
-
+			<div class="clear">
 			<section id="imgBanner"></section>
-		<div class="clear">
-		<!--creating a navigation container-->
-		<div id="navbar" class="navbar" id="mynavbar">
-			<a href="blog.html">Blog</a>
-        	<a href="contacts.html">Contacts</a>
-        	<a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
-        	<a href="gallery.html">Gallery</a>
-        	<a href="about us.html">About Us</a>
-        	<a class="active" href="index.html">Home</a>
-        <div class="imgBanner">
-			<img href="index.html" src="Leviticus/LP banner.png" width="100%">
-		</div>
-		</div>
-		</div>
+		</div><br><br>
+<img src="Leviticus/LP banner 3000.png" style="width:100%" height="130px">
 			<br><br>
 	<div class="clear">
 	
@@ -176,19 +302,19 @@ body, html {
 <div class="covericons" style="margin-left:1%; text-align:center;" >
 <div class="navicons">
 <h1>About Us</h1>
-<a href="about us.html"><img id="myImg" src="logo/about us.png" width="50%"></a>
+<a href="about us.html"><img id="myImg" src="https://www.freeiconspng.com/uploads/information-icon-clip-art-at-clker-com-vector-clip-art-online--32.png" width="50%"></a>
 </div>
 <div class="navicons">
 <h1>Gallery</h1>
-<a href="gallery.html"><img id="myImg" src="logo/thefreeforty_picture-512.png" width="50%"></a>
+<a href="gallery.html"><img id="myImg" src="https://cdn4.iconfinder.com/data/icons/thefreeforty/30/thefreeforty_picture-512.png" width="50%"></a>
 </div>
 <div class="navicons">
 <h1>The Team</h1>
-<a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction"><img id="myImg" src="logo/Teams.png" style="width:55%; margin-top:5%;" ></a>
+<a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction"><img id="myImg" src="https://pngimage.net/wp-content/uploads/2018/06/teams-icon-png-7.png" style="width:55%; margin-top:5%;" ></a>
 </div>
 <div class="navicons">
 <h1>Contacts</h1>
-<a href="cont"><img id="myImg" src="logo/contacts-png-image-54130.png" width="50%"></a>
+<a href="cont"><img id="myImg" src="http://pngimages.net/sites/default/files/contacts-png-image-54130.png" width="50%"></a>
 </div>
 </div>
 <div class="clear">
@@ -197,18 +323,25 @@ body, html {
 <br>
 
 <div class="clear"></div>
-<div class="col-0">
+  <section id="Bottom">
+  <div class="col-0">
 <div class="iconbar">
 <div class="sicons">
+      <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="6%"></a>
+      <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="6%"></a>
+      <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="6%"></a>
+  </div>
+  </div>
+</div>
 			<a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
 			<a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="3%"></a>
 			<a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
 	</div>
 	</div>
-
 <br>
 <div class="clear"></div>
 <footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+  </section>
 </div>
 <script>
 window.onscroll = function() {myFunction()};
@@ -223,7 +356,8 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
+</script>
+<script>
 
 var myIndex = 0;
 carousel();

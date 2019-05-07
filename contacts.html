@@ -19,7 +19,7 @@ body, html {
 
 .bg-img {
     /* The image used */
-    background-image: url("images/IMG_20171024_072058_215.jpg");
+    background-image: url("images/IMG_20170925_154717_497.jpg");
 
     min-height: 640px;
 
@@ -29,22 +29,45 @@ body, html {
     background-size: cover;
 }  	
 
+.scrolling-box {
+  display: block;
+  height: 900px;/* 710px */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
 </style>
 </head>
 
 <body>
 		<!--creating a navigation container-->
-		<div id="navbar">
-			<a href="blog.html">Blog</a>
-        	<a class="active" href="contacts.html">Contacts</a>
-        	<a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
-        	<a href="gallery.html">Gallery</a>
-        	<a href="about us.html">About Us</a>
-        	<a href="index.html">Home</a>
-       	<div class="imgBanner">
-			<img href="index.html" src="Leviticus/LP banner.png" width="100%">
-		</div>
-		</div>
+		 <div class="navbar">
+  <div class="navbar-header">
+    <div class="navbar-title">
+      Leviticus Photography
+    </div>
+  </div>
+  <div class="navbar-btn">
+    <label for="navbar-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="navbar-check">
+  <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a href="gallery.html">Gallary</a>
+    <a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+    <a class="active" href="contacts.html">Contacts</a>
+    <a href="blog.html">Blog</a>
+  </div>
+</div>
 		<div class="clear">
 			<br><br><br>
 		</div>
@@ -57,6 +80,17 @@ body, html {
   						Founder: <a href="mailto:sibusisomashinini@outlook.com">Sibusiso Mashinini</a> (RSA)<br><br>
 						Art Director: <a href="mailto:olivia.baker99@hotmail.co.uk">Olivia Baker</a> (UK)<br><br>
 						Designer: <a href="mailto:mtebezinhle@gmail.com">Zinhle Mtebe</a> (RSA)<br><br>
+<<<<<<< HEAD
+						Photographer: <a href="mailto:megan.peters21@outlook.com">Megan Peters</a> (UK)<br><br></h4> 
+  					</form>
+				</div>
+				<div class="col-02">
+  					<form>
+  						<h4>Email —<br><br>
+						<a href="mailto:leviticusphotograpy02@outlook.com">leviticusphotograpy02@outlook.com</a></h4> 
+						<a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/social-facebook-circle-512.png" width="10%"></a>
+			<a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/social-instagram-new-circle-512.png" width="10%"></a>
+			<a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-512.png" width="10%"></a>
 						Photographer: <a href="mailto:megan.peters21@outlook.com">Megan Peters</a> (UK)<br><br>
  						<br>
 						Email —<br>
@@ -68,11 +102,18 @@ body, html {
 			<br>— Diane Arbus</i></h3>
 			</div>
 		
-<div class="clear"></div>
+
 <br>
-<div class="col-0">
+  <section id="Bottom">
+  <div class="col-0">
 <div class="iconbar">
 <div class="sicons">
+      <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="6%"></a>
+      <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="6%"></a>
+      <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="6%"></a>
+  </div>
+  </div>
+</div>
 			<a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
 			<a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="3%"></a>
 			<a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
@@ -82,7 +123,7 @@ body, html {
 <br>
 <div class="clear"></div>
 <footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
-
+  </section>
 <script>
 window.onscroll = function() {myFunction()};
 

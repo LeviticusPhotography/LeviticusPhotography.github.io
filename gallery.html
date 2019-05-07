@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>Gallery</title>
+<head>
 <link href="css/style.css" rel="stylesheet">
-<link href="css/background.css" rel="stylesheet">
 <link rel="icon" type="image/ico" href="Leviticus/LP.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-* {
-  box-sizing: border-box;
-}
-
-body, html {
-			height: 100%;
-      }
-
 
 #p1 {
       color:#6D9C91;
@@ -180,25 +171,54 @@ img {
         width: 100%;
     }
 }
-</style>
-<body>
-    <!--creating a navigation container-->
-    <div id="navbar">
-        <a href="blog.html">Blog</a>
-        	<a href="contacts.html">Contacts</a>
-        	<a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
-        	<a class="active" href="gallery.html">Gallery</a>
-        	<a href="about us.html">About Us</a>
-        	<a href="index.html">Home</a>
-    <div class="imgBanner">
-      <img href="index.html" src="Leviticus/LP banner.png" width="100%">
-    </div>
-    </div>
-    <br>
 
-    <div class="clear">
-     
-<div class="wrap">
+
+.scrolling-box {
+  display: block;
+  height: 900px;/* 710px */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
+</style>
+</head>
+<body>
+
+
+<div class="scrolling-box">
+  <section id="Top">
+    <div class="navbar">
+  <div class="navbar-header">
+    <div class="navbar-title">
+      Leviticus Photography
+    </div>
+  </div>
+  <div class="navbar-btn">
+    <label for="navbar-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="navbar-check">
+  <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a class="active" href="gallery.html">Gallary</a>
+    <a href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="blog.html">Blog</a>
+  </div>
+</div>
+    <br>
+  </section>
+
+  <section id="Middle">
+    <div class="wrap">
     <p id="p1"><h1>By Sibusiso Mashinini</h1></p>
 
 <div class="row">
@@ -245,76 +265,90 @@ img {
  <hr>
 
       <p id="p1"><h1>By Zinhle Mtebe</h1></p>
-	  
-  <div class="column">
-    <img id="myImg" src="images/Z38267290_1777827788997303_3758951112556675072_n.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img id="myImg" src="images/Z38213740_1777824502330965_1422020670493032448_n.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img id="myImg" src="images/Z38139482_1777824938997588_6789984124040904704_n.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img id="myImg" src="images/Z ii N H L ë 20171125_081443.jpg" style="width:100%; height:241px;" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
-  </div>
+    
    <div class="column">
-    <img id="myImg" src="images/ZIMG-20180410-WA0009.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">  </div>
+    <img id="myImg" src="images/Z38272548_1777825588997523_150697199687172096_n.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">  </div>
    <div class="column">
-    <img id="myImg" src="images/ZIMG-20180410-WA0016.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+    <img id="myImg" src="images/ZIMG-20180410-WA0016.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/Z38473813_1777829075663841_8896372472685789184_n.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+    <img id="myImg" src="images/Z38473813_1777829075663841_8896372472685789184_n.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/Z38272548_1777825588997523_150697199687172096_n.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+    <img id="myImg" src="images/ZIMG-20180410-WA0009.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
   </div>
-
+ <div class="column">
+    <img id="myImg" src="images/Z38267290_1777827788997303_3758951112556675072_n.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/Z38213740_1777824502330965_1422020670493032448_n.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/Z38139482_1777824938997588_6789984124040904704_n.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/Z ii N H L ë 20171125_081443.jpg" style="width:100%;" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/Z ii N H L ë 20171217_094510.jpg" style="width:100%;" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+  </div>
   <div class="clear">
    <br>
-	<h3><i>“Life is like a camera. Just focus on what’s important and capture the good times, develop from the negatives and if things don’t work out, just take another shot.”
+  <h3><i>“Life is like a camera. Just focus on what’s important and capture the good times, develop from the negatives and if things don’t work out, just take another shot.”
 <br>
 — Anonymous</i></h3>
 </div>
 <hr>
 
       <p id="p1"><h1>By Megan Peters</h1></p>
-		
+    
 <div class="column">
-    <img id="myImg" src="images/M35362291_1161353667340901_28249477374541824_n.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35362291_1161353667340901_28249477374541824_n.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35401111_1161353907340877_5577629042380636160_n.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35401111_1161353907340877_5577629042380636160_n.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35412018_1161353627340905_5371743140732469248_n.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35429046_1161353857340882_4975214880744275968_n.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35463943_1161354197340848_5436770753775140864_n.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35519820_1161353670674234_2182844770877964288_n.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
   </div>
    <div class="column">
-    <img id="myImg" src="images/MIMG-20180106-WA0006.jpg" style="width:100%; height:213px;" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35412018_1161353627340905_5371743140732469248_n.jpg" style="width:100%;" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
   </div>
    <div class="column">
-    <img id="myImg" src="images/M11896121_596205600522380_1726089153784410372_n.jpg" style="width:100%; height:213px;" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35463943_1161354197340848_5436770753775140864_n.jpg" style="width:100%;" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35519820_1161353670674234_2182844770877964288_n.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M11896121_596205600522380_1726089153784410372_n.jpg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/MIMG-20180106-WA0005.jpg" style="width:100%; height:214px;" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+    <img id="myImg" src="images/M35521274_1161353634007571_2108533255312506880_n.jpg" style="width:100%;" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35429046_1161353857340882_4975214880744275968_n.jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+    <img id="myImg" src="images/MIMG-20180106-WA0006.jpg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img id="myImg" src="images/M35521274_1161353634007571_2108533255312506880_n.jpg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+    <img id="myImg" src="images/MIMG-20180106-WA0005.jpg" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
   </div>
  <div class="clear">
     <br>
   <h3><i>“What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.”<br>
 — Karl Lagerfeld</i></h3>
 </div>
+
+<hr>
+
+      <p id="p1"><h1>By Olivia Baker</h1></p>
+
+<div class="column">
+    <img id="myImg" src="images/O23120050_128877531209070_1297323075745639017_o.jpg" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+  </div>
+  <video style="margin-left:25%" width="550" height="350" controls>
+        <Source src="images/OVideo by Olivia.mp4" type="video/mp4">
+      </video>
+ <div class="clear">
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -360,43 +394,24 @@ img {
     <center><p>Court Flowers</p></center>
     </div>
 
-	<div class="mySlides">
-      <img src="images/IMG_20171027_042108_084.jpg" style="width:80%; margin-left:10%; margin-top:-3%;">
+  <div class="mySlides">
+      <img src="images/IMG_20171027_042108_084.jpg" style="width:80%; margin-left:10%; margin-top:-6%;">
     <center><p>Flower Pot</p></center>
     </div>
-	
-	<div class="mySlides">
-      <img src="images/IMG_20171027_034803_0233.jpg" style="width:80%; margin-left:10%; margin-top:-3%;">
+  
+  <div class="mySlides">
+      <img src="images/IMG_20171027_034803_0233.jpg" style="width:80%; margin-left:10%; margin-top:-6%;">
     <center><p>The Court</p></center>
     </div>
-	
-	<div class="mySlides">
-      <img src="images/IMG_20171027_040911_603.jpg" style="width:80%; margin-left:10%; margin-top:-3%;">
+  
+  <div class="mySlides">
+      <img src="images/IMG_20171027_040911_603.jpg" style="width:80%; margin-left:10%; margin-top:-6%;">
     <center><p>Down The Hall</p></center>
     </div>
-	
-    <div class="mySlides">
-      <img src="images/Z38267290_1777827788997303_3758951112556675072_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
-    <center><p>Jozi Sunset</p></center>
-    </div>
-    
-    <div class="mySlides">
-      <img src="images/Z38213740_1777824502330965_1422020670493032448_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
-    <center><p>Kasi Sunset</p></center>
-      </div>
-    <div class="mySlides">
-      <img src="images/Z38139482_1777824938997588_6789984124040904704_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
-    <center><p>City Sunset</p></center>
-      </div>
 
-    <div class="mySlides">
-      <img src="images/Z ii N H L ë 20171125_081443.jpg" style="width:70%; margin-left:15%; margin-top:-5%;">
-    <center><p>Beautiful Sunset</p></center>
-    </div>
-    
-    <div class="mySlides">
-      <img src="images/ZIMG-20180410-WA0009.jpg" style="width:52%; margin-left:25%; margin-top:-5%;">
-    <center><p>Midnight In The City</p></center>
+  <div class="mySlides">
+      <img src="images/Z38272548_1777825588997523_150697199687172096_n.jpg" style="width:52%; margin-left:25%; margin-top:-5%;">
+    <center><p>The Light In The Dark</p></center>
 
     </div>
 
@@ -411,60 +426,89 @@ img {
     </div>
 
     <div class="mySlides">
-      <img src="images/Z38272548_1777825588997523_150697199687172096_n.jpg" style="width:52%; margin-left:25%; margin-top:-5%;">
-    <center><p>The Light In The Dark</p></center>
+      <img src="images/ZIMG-20180410-WA0009.jpg" style="width:52%; margin-left:25%; margin-top:-5%;">
+    <center><p>Midnight In The City</p></center>
+
+    </div>
+<div class="mySlides">
+      <img src="images/Z38267290_1777827788997303_3758951112556675072_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
+    <center><p>Jozi Sunset</p></center>
+    </div>
+    
+    <div class="mySlides">
+      <img src="images/Z38213740_1777824502330965_1422020670493032448_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
+    <center><p>Kasi Sunset</p></center>
+      </div>
+    <div class="mySlides">
+      <img src="images/Z38139482_1777824938997588_6789984124040904704_n.jpg" style="width:90%; margin-left:5%; margin-top:-4%;">
+    <center><p>City Sunset</p></center>
+      </div>
+
+    <div class="mySlides">
+      <img src="images/Z ii N H L ë 20171125_0814433.jpg" style="width:70%; margin-left:15%; margin-top:-7%;">
+    <center><p>Beautiful Sunset</p></center>
+    </div>
+
+     <div class="mySlides">
+      <img src="images/Z ii N H L ë 20171217_094510.jpg" style="width:70%; margin-left:15%; margin-top:-5%;">
+    <center><p>The Hustle</p></center>
     </div>
     
      <div class="mySlides">
-      <img src="images/M35362291_1161353667340901_28249477374541824_n.jpg" style="width:100%">
+      <img src="images/M35362291_1161353667340901_28249477374541824_n.jpg" style="width:96%; margin-left:2%;">
     <center><p>Sumidero Canyon, Mexico</p></center>
     </div>
     
     <div class="mySlides">
-      <img src="images/M35401111_1161353907340877_5577629042380636160_n.jpg" style="width:100%">
+      <img src="images/M35401111_1161353907340877_5577629042380636160_n.jpg" style="width:96%; margin-left:2%;">
     <center><p>Palenque, Mexico</p></center>
       </div>
 
     <div class="mySlides">
-      <img src="images/M35412018_1161353627340905_5371743140732469248_n.jpg" style="width:100%">
-    <center><p>Mexico City</p></center>
+      <img src="images/M35429046_1161353857340882_4975214880744275968_n.jpg" style="width:96%; margin-left:2%;">
+    <center><p>Palenque, Mexico</p></center>
       </div>
 
     <div class="mySlides">
-      <img src="images/M35463943_1161354197340848_5436770753775140864_n.jpg" style="width:100%">
-    <center><p>Antigue, Guatemala</p></center>
+      <img src="images/M35519820_1161353670674234_2182844770877964288_n.jpg" style="width:96%; margin-left:2%;">
+    <center><p>Sumidero Canyon, Mexico</p></center>
     </div>
     
     <div class="mySlides">
-      <img src="images/MIMG-20180106-WA0006.jpg" style="width:89%; margin-left:5.5%;">
-    <center><p>Snowy Mountains, Austria</p></center>
+        <img src="images/M35412018_1161353627340905_5371743140732469248_n.jpg" style="width:96%; margin-left:2%;">
+    <center><p>Mexico City</p></center>
     </div>
 
      <div class="mySlides">
-      <img src="images/M11896121_596205600522380_1726089153784410372_n.jpg" style="width:89%; margin-left:5.5%;">
+        <img src="images/M35463943_1161354197340848_5436770753775140864_n.jpg" style="width:96%; margin-left:2%;">
+    <center><p>Antigue, Guatemala</p></center>
+     
+    </div>
+
+    <div class="mySlides">
+      <img src="images/M11896121_596205600522380_1726089153784410372_n.jpg" style="width:96%; margin-left:2%;">
     <center><p>Bamboo Boats, Zambia</p></center>
     </div>
 
     <div class="mySlides">
-      <img src="images/M35519820_1161353670674234_2182844770877964288_n.jpg" style="width:100%">
-    <center><p>Sumidero Canyon, Mexico</p></center>
-    </div>
-
-    <div class="mySlides">
-      <img src="images/MIMG-20180106-WA0005.jpg" style="width:89%; margin-left:5.5%;">
-    <center><p>Let's Skate, Austria</p></center>
+       <img src="images/M35521274_1161353634007571_2108533255312506880_n.jpg" style="width:96%; margin-left:2%;">
+    <center><p>Megan, Mexico</p></center>
     </div>
 
      <div class="mySlides">
-      <img src="images/M35429046_1161353857340882_4975214880744275968_n.jpg" style="width:100%">
-    <center><p>Palenque, Mexico</p></center>
+      <img src="images/MIMG-20180106-WA0006.jpg" style="width:90%; margin-left:5%; margin-top:-3.5%;">
+    <center><p>Snowy Mountains, Austria</p></center>
     </div>
     
     <div class="mySlides">
-      <img src="images/M35521274_1161353634007571_2108533255312506880_n.jpg" style="width:100%">
-    <center><p>Megan, Mexico</p></center>
+      <img src="images/MIMG-20180106-WA0005.jpg" style="width:90%; margin-left:5%; margin-top:-3.5%;">
+    <center><p>Let's Skate, Austria</p></center>
       </div>
-
+    
+    <div class="mySlides">
+      <img src="images/O23120050_128877531209070_1297323075745639017_o.jpg" style="width:98%; margin-left:1%; margin-top:-3.5%;">
+    <center><p>A Valley Of A Thousand Hills, Durban</p></center>
+      </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -475,36 +519,43 @@ img {
   </div>
   </div>
   <br>
-
+</div>
   <div class="clear">
-  <div class="up-arrow">
-      <a href="gallery.html"><img src="logo/up--.png" width="13%"></a>
+</div>
+</div>
+</div>
+  </section>
+    <nav>
+  <div class="up">
+    <a href="#Top"><img src="logo/up--.png" width="5%"></a>
   </div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<div class="col-0">
+    </nav>
+  <br><br>
+  <div class="clear"></div>
+  <section id="Bottom">
+  <div class="col-0">
 <div class="iconbar">
 <div class="sicons">
+      <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="6%"></a>
+      <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="6%"></a>
+      <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="6%"></a>
+  </div>
+  </div>
+</div>
       <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
       <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="3%"></a>
       <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
   </div>
   </div>
-
 <br>
 <div class="clear"></div>
 <footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+  </section>
 
+</div>
 <script>
 function myFunctions() {
-	alert("Click or Hover Over The Image To View The Info!");
+  alert("Click or Hover Over The Image To View The Info!");
 }
 </script>
 
@@ -561,6 +612,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>   
+</script>
 </body>
 </html>

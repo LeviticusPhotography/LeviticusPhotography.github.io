@@ -9,7 +9,7 @@ body, html {
     }
 
 body{
-  font-family: Raleway, Arial, Helvetica, sans-serif, Source Sans Pro, Verdana;
+  font-family: Raleway, segoe ui, Arial, Helvetica, sans-serif, Source Sans Pro, Verdana;
 	background:#f6f6f6; 
 	padding:0; 
 	margin:0;
@@ -63,6 +63,8 @@ p 	{font-family: spectral;
 }
 
 .col-0{
+
+  position: relative;
   padding-bottom: 15px;
 	padding-top: 15px;
 	background: white;
@@ -132,69 +134,103 @@ h2		{text-align:center;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-#navbar {
-  overflow: hidden;
+.navbar {
+  width: 100%;
   background-color: white;
+  position: fixed;
   box-shadow: 1px 5px 5px grey;
   z-index:999;
-
 }
 
-#navbar a {
-  float: right;
-  display: block;
+.navbar > .navbar-header {
+  display: inline;
+}
+
+.navbar > .navbar-header > .navbar-title {
+  display: inline-block;
+  font-size: 22px;
   color: gray;
-  text-align: center;
-  padding: 15px 30px;
-  margin-top: .3%;
-  text-decoration: none;
-  font-size: 17px;
-
+  padding: 10px 10px 10px 10px;
 }
 
+.navbar > .navbar-btn {
+  display: none;
+}
 
-#navbar a:hover {
+.navbar > .navbar-links {
+  display: inline;
+  float: right;
+  font-size: 17px;
+}
+
+.navbar > .navbar-links > a {
+  display: inline-block;
+  padding: 14px 13px;
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar > .navbar-links > a:hover {
+  transition: all 0.4s ease-in-out;
   background-color:#606060;
   color: white;
-  transition: all 0.4s ease-in-out;
-  
 }
 
-#navbar a.active {
+.navbar > #navbar-check {
+  display: none;
+}
+
+.navbar a.active {
   background-color: #6D9C91;
   color: white;
-   transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
+@media (max-width:750px) {
+  .navbar > .navbar-btn {
+    display: inline-block;
     position: absolute;
-    right: 0;
-    top: 0;
+    overflow: hidden;
+    right: 0px;
+    top: 0px;
   }
-  .navbar.responsive a {
-    float: none;
+  .navbar > .navbar-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar > .navbar-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar > .navbar-btn > label > span {
     display: block;
-    text-align: left;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
   }
-}
-
-
-/* 100% Image Width on Smaller Screens */
-@media screen and (max-width: 700px){
-    #navbar a {
-        width: 100%;
-        padding: 1px 5px;
-    }
+  .navbar > .navbar-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar > .navbar-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > #navbar-check:not(:checked) + .navbar-links {
+    height: 0px;
+  }
+  .navbar > #navbar-check:checked + .navbar-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 
 .content {
@@ -297,12 +333,17 @@ img {
 
 /* Add a footer */
 footer	{
-	position:bottom;
-	width:100%;
-	background-color:white;
-	color:gray;
-	text-align:center;
-  font-size: 17px;	
+  position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:white;
+   color:gray;
+   text-align: center;
+  font-size: 20px;  
+  padding-top: 2%;
+
+
 }
 
 .clear {clear:both;
@@ -325,8 +366,8 @@ footer	{
 }
 
 .up { 
-      float: right;
-      margin-right:20%;
+      position: sticky;
+      float: center;
 }
 
 .row0::after {
@@ -376,7 +417,7 @@ aside	{width:25%;
 
 .ContactUs a{position: relative;
 			text-decoration:none;
-			padding-right:23%;
+			padding-right:46%;
 			margin-top: -4.8%;
 			float:right;
 			font-size: 19px;		
@@ -411,6 +452,17 @@ hr			{
 
 
 /* Add styles to the form container */
+.col-02  {
+        width: 35%;
+        float: right;
+        border-radius: 10px;
+        padding: 15px;
+        margin-right:3%;
+        margin-top:10%;
+        visibility: visible;
+        animation-delay: 0.9s;
+        animation-name: fadeInUp; 
+}
 .col-2  {
         width: 35%;
         float: left;

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Team</title>
 <link href="css/style.css" rel="stylesheet">
 <link rel="icon" type="image/ico" href="Leviticus/LP.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body, html {
-			height: 100%;
+      height: 100%;
       }
 
 h6    {
@@ -52,8 +52,8 @@ h6    {
 .container {
   position:sticky;
   width: 80%;
-	padding: auto;
-	margin: auto;
+  padding: auto;
+  margin: auto;
 }
 
 .image {
@@ -64,7 +64,7 @@ h6    {
   backface-visibility: hidden;
 }
 .image:hover {
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.21);
 }
 
 .middle {
@@ -105,7 +105,7 @@ h6    {
 }
 
 .team-title h4 {
-	text-align:center;
+  text-align:center;
     margin-bottom: 0px;
     display: block;
     text-transform: uppercase;
@@ -125,23 +125,52 @@ h6    {
   }
 }
 
+
+.scrolling-box {
+  display: block;
+  height: 900px;/* 710px */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
 </style>
 </head>
 <body>
-    <!--creating a navigation container-->
-    <div id="navbar">
-        <a href="blog.html">Blog</a>
-        	<a href="contacts.html">Contacts</a>
-        	<a class="active" href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
-        	<a href="gallery.html">Gallery</a>
-        	<a href="about us.html">About Us</a>
-        	<a href="index.html">Home</a>
-    <div class="imgBanner">
-      <img href="index.html" src="Leviticus/LP banner.png" width="100%">
+
+
+<div class="scrolling-box">
+  <section id="Top">
+    <div class="navbar">
+  <div class="navbar-header">
+    <div class="navbar-title">
+      Leviticus Photography
     </div>
-    </div>
+  </div>
+  <div class="navbar-btn">
+    <label for="navbar-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="navbar-check">
+  <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a href="gallery.html">Gallary</a>
+    <a class="active" href="meet the team.html" class="mybutton" onClick="myFunctions()" id="myFunction">The Team</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="blog.html">Blog</a>
+  </div>
+</div>
     <br>
-      
+  </section>
+
+  <section id="Middle">
        <div class="wrap">
         
         <br><br>
@@ -150,9 +179,9 @@ h6    {
 
               <div class="middle">
                  <div class="team-title">
-					<h1>Sibusiso Mashinini</h1>
-					<span>founder <br>&amp; <br>Photographer</span>
-				</div><br>
+          <h1>Sibusiso Mashinini</h1>
+          <span>founder <br>&amp; <br>Photographer</span>
+        </div><br>
                   <hr>
                   
                 <div class="text"><h4>Hi There !</h4>
@@ -160,9 +189,9 @@ h6    {
                 </div>
               </div>
               </div><br><br>
-			  <h3><i>“I don’t trust words. I trust pictures.”
-			  <br>— Gilles Peress
-				</i></h3>
+        <h3><i>“I don’t trust words. I trust pictures.”
+        <br>— Gilles Peress
+        </i></h3>
               <div class="iconbar">
                 <div class="sicons">
                   <a href="https://www.facebook.com/twentyfirst.centurionsvibe/"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
@@ -184,15 +213,15 @@ h6    {
                  <span>Designer<br> &amp; <br>Art Director</span>
                 </div><br>
                   <hr>
-				  
+          
                 <div class="text"><h4>Hello World</h4>
                  <p>I'm Olivia Baker, I’m from Southampton, England. I love travelling, painting and sketching.  I also adore cooking and baking for my family and coming up with new exciting recipes for them to try, it always makes me smile when I see them enjoying something I’ve made. I’d like to continue travelling the world.</p>
                 </div>
               </div>
            </div><br><br>
-		   <h3><i>“Photograph: a picture painted by the sun without instruction in art.”
-		   <br>
-		   — Ambrose Bierce</i></h3>
+       <h3><i>“Photograph: a picture painted by the sun without instruction in art.”
+       <br>
+       — Ambrose Bierce</i></h3>
 
               <div class="iconbar">
                 <div class="sicons">
@@ -219,9 +248,9 @@ h6    {
                 </div>
               </div>
           </div><br><br>
-		  <h3><i>“The camera is an instrument that teaches people how to see without a camera.”
-		   <br>
-		   — Dorothea Lange</i></h3>
+      <h3><i>“The camera is an instrument that teaches people how to see without a camera.”
+       <br>
+       — Dorothea Lange</i></h3>
               <div class="iconbar">
                 <div class="sicons">
                     <a href="https://www.facebook.com/zinhlezamangwe.mtebe"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
@@ -248,9 +277,9 @@ h6    {
                 </div>
               </div>
             </div><br><br>
-			<h3><i>“If you see something that moves you, and then snap it, you keep a moment.”
-			<br>
-			— Linda McCartney</i></h3>
+      <h3><i>“If you see something that moves you, and then snap it, you keep a moment.”
+      <br>
+      — Linda McCartney</i></h3>
               <div class="iconbar">
                 <div class="sicons">
                     <a href="https://www.facebook.com/megan.peters.589"> <img src="logo/social-facebook-circle-512.png" width="3%"></a>
@@ -259,25 +288,34 @@ h6    {
               </div><br><br>
                
       </div>
-<div class="clear">
-      <div class="up">
-        <a href="meet the team.html"><img src="logo/up--.png" width="13%"></a>
+  </section>
+    <nav>
+  <div class="up">
+    <a href="#Top"><img src="logo/up--.png" width="5%"></a>
   </div>
-</div>
-
-<div class="clear"></div>
-<div class="col-0">
+  <br><br>
+ <div class="clear"></div>
+  <section id="Bottom">
+  <div class="col-0">
 <div class="iconbar">
 <div class="sicons">
+      <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="6%"></a>
+      <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="6%"></a>
+      <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="6%"></a>
+  </div>
+  </div>
+</div>
       <a href="https://www.facebook.com/leviticusphotography02/"> <img src="logo/circle-facebook_318-10967.jpg" width="3%"></a>
       <a href="https://www.instagram.com/leviticusphotography02/"> <img src="logo/images.png" width="3%"></a>
       <a href="https://www.pinterest.co.uk/leviticusphotography02/"> <img src="logo/pinterest-round_318-26597.jpg" width="3%"></a>
   </div>
   </div>
-
 <br>
 <div class="clear"></div>
 <footer>&copy;2018 designed by <i>S. M Web Studio</i></footer>
+  </section>
+
+</div>
 <script>
 window.onscroll = function() {myFunction()};
 
